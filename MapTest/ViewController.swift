@@ -25,7 +25,23 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
+        mapRegion.center.latitude = 51.5001524
+        mapRegion.center.longitude = -0.1262362
+        mapRegion.span.latitudeDelta = 0.2
+        mapRegion.span.longitudeDelta = 0.2
+        mapView.setRegion(mapRegion, animated: true)
+        
+        
+        // Drop a pin on Parliament Square
+        
+        let parliamentLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.5001524, -0.1262362)
+        
+        let parliamentAnnotation = PlacemarkClass(coordinate: parliamentLocation, title: "Parliament Square", subtitle: "Big Ro is here!")
+        
+        mapView.addAnnotation(parliamentAnnotation)
+              
     }
 
     override func didReceiveMemoryWarning() {

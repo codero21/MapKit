@@ -41,9 +41,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let parliamentAnnotation = PlacemarkClass(coordinate: parliamentLocation, title: "Parliament Square", subtitle: "Big Ro is here!")
         
         mapView.addAnnotation(parliamentAnnotation)
-              
+        
     }
 
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        let newAnnotation: MKPinAnnotationView = MKPinAnnotationView(annotation: "annotation" as! MKAnnotation, reuseIdentifier: "annotation1")
+        
+        let newAnnotation: MKPinAnnotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "annotation1")
+        
+        
+        newAnnotation.pinTintColor = UIColor.yellow
+        newAnnotation.animatesDrop = true
+        newAnnotation.canShowCallout = true
+        newAnnotation.setSelected(true, animated: true)
+        
+        return newAnnotation
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -7,8 +7,20 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
+    
+    // MARK: Outlets
+    
+    @IBOutlet var mapModeSegmentControl: UIView!
+    
+    
+    // MARK: Action Methods
+    
+    @IBAction func onSegmentChanged(_ sender: Any) {
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

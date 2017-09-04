@@ -35,15 +35,23 @@
                                     <action selector="onSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hXz-O3-p7c"/>
                                 </connections>
                             </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-SI-9xx">
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wVw-SI-9xx" secondAttribute="bottom" id="0Ez-bd-8bc"/>
+                            <constraint firstItem="wVw-SI-9xx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0gj-Fn-9FU"/>
+                            <constraint firstItem="wVw-SI-9xx" firstAttribute="top" secondItem="jKg-7D-6x5" secondAttribute="bottom" constant="20" id="LXn-Rn-0X3"/>
+                            <constraint firstAttribute="trailing" secondItem="wVw-SI-9xx" secondAttribute="trailing" id="daM-ns-9qU"/>
                             <constraint firstItem="jKg-7D-6x5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="lTq-aK-e7C"/>
                             <constraint firstItem="jKg-7D-6x5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="nja-AP-zbv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapModeSegmentControl" destination="8bC-Xf-vdC" id="esy-ww-369"/>
+                        <outlet property="mapView" destination="wVw-SI-9xx" id="W6B-Bu-7bF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

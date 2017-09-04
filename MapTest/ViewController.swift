@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     // MARK: Outlets
     
     @IBOutlet var mapModeSegmentControl: UIView!
+    @IBOutlet weak var mapView: MKMapView!
     
     
     // MARK: Action Methods

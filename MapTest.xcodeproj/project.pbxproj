@@ -14,6 +14,7 @@
 		E3C7D77C1F5C6B9200CA5054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C7D77A1F5C6B9200CA5054 /* LaunchScreen.storyboard */; };
 		E3C7D7851F5C6C5900CA5054 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C7D7841F5C6C5900CA5054 /* CoreLocation.framework */; };
 		E3C7D7871F5DC69900CA5054 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C7D7861F5DC69900CA5054 /* MapKit.framework */; };
+		E3C7D78B1F5DCDD800CA5054 /* PlacemarkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7D78A1F5DCDD800CA5054 /* PlacemarkClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E3C7D77D1F5C6B9200CA5054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C7D7841F5C6C5900CA5054 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E3C7D7861F5DC69900CA5054 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E3C7D78A1F5DCDD800CA5054 /* PlacemarkClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacemarkClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E3C7D7711F5C6B9200CA5054 /* AppDelegate.swift */,
 				E3C7D7731F5C6B9200CA5054 /* ViewController.swift */,
 				E3C7D7751F5C6B9200CA5054 /* Main.storyboard */,
+				E3C7D78A1F5DCDD800CA5054 /* PlacemarkClass.swift */,
 				E3C7D7781F5C6B9200CA5054 /* Assets.xcassets */,
 				E3C7D77A1F5C6B9200CA5054 /* LaunchScreen.storyboard */,
 				E3C7D77D1F5C6B9200CA5054 /* Info.plist */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3C7D7741F5C6B9200CA5054 /* ViewController.swift in Sources */,
+				E3C7D78B1F5DCDD800CA5054 /* PlacemarkClass.swift in Sources */,
 				E3C7D7721F5C6B9200CA5054 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
